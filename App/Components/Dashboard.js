@@ -43,7 +43,7 @@ class Dashboard extends React.Component{
   }
   goToProfile() {
     this.props.navigator.push({
-      title: this.props.userInfo.name || "Profile",
+      title: "Profile",
       component: Profile,
       passProps: {userInfo: this.props.userInfo}
     })
